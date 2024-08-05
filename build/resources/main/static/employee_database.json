@@ -49,5 +49,102 @@
     "lastName" : "Harrison",
     "position" : "Developer III",
     "department" : "Engineering"
-  }
+  },
+    {
+      "employeeId": "1",
+      "firstName": "John",
+      "lastName": "Lennon",
+      "position": "Development Manager",
+      "department": "Engineering",
+      "directReports": [
+        {
+          "employeeId": "2"
+        },
+        {
+          "employeeId": "3"
+        },
+        {
+          "employeeId": "4"
+        },
+        {
+          "employeeId": "5"
+        },
+        {
+          "employeeId": "6"
+        },
+        {
+          "employeeId": "7"
+        },
+        {
+          "employeeId": "8"
+        },
+        {
+          "employeeId": "9"
+        }
+      ]
+    },
+    {
+      "employeeId": "2",
+      "firstName": "Paul",
+      "lastName": "McCartney",
+      "position": "Developer I",
+      "department": "Engineering",
+      "directReports": null
+    },
+    {
+      "employeeId": "3",
+      "firstName": "Ringo",
+      "lastName": "Starr",
+      "position": "Developer II",
+      "department": "Engineering",
+      "directReports": null
+    },
+    {
+      "employeeId": "4",
+      "firstName": "George",
+      "lastName": "Harrison",
+      "position": "Developer III",
+      "department": "Engineering",
+      "directReports": null
+    },
+    {
+      "employeeId": "5",
+      "firstName": "Brian",
+      "lastName": "Epstein",
+      "position": "Developer IV",
+      "department": "Engineering",
+      "directReports": null
+    },
+    {
+      "employeeId": "6",
+      "firstName": "Stuart",
+      "lastName": "Sutcliffe",
+      "position": "Developer V",
+      "department": "Engineering",
+      "directReports": null
+    },
+    {
+      "employeeId": "7",
+      "firstName": "Pete",
+      "lastName": "Best",
+      "position": "Developer VI",
+      "department": "Engineering",
+      "directReports": null
+    },
+    {
+      "employeeId": "8",
+      "firstName": "Eric",
+      "lastName": "Clapton",
+      "position": "Developer VII",
+      "department": "Engineering",
+      "directReports": null
+    },
+    {
+      "employeeId": "9",
+      "firstName": "Billy",
+      "lastName": "Preston",
+      "position": "Developer VIII",
+      "department": "Engineering",
+      "directReports": null
+    }
 ]

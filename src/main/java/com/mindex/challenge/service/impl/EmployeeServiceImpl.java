@@ -62,8 +62,29 @@ public class EmployeeServiceImpl implements EmployeeService {
     */
     public ReportingStructure getReportingStructure(String employeeId) {
         Employee employee = employeeRepository.findByEmployeeId(employeeId);
+        if (employee != null) {
+            loadDirectReportsData(employee, new HashSet<>());
+        }
         int directReports = calculateDirectReports(employee, new HashSet<>());
         return new ReportingStructure(directReports, employee);
+    }
+    /*
+        After calculating the step above, I realized the direct reports object information was not loaded in, we must
+        also apply the same logic of recursively set the indirect report's full data
+     */
+    private void loadDirectReportsData(Employee employee, HashSet<String> seen) {
+        if (employee == null || seen.contains(employee.getEmployeeId())) {
+            return;
+        }
+        seen.add(employee.getEmployeeId());
+        if (employee.getDirectReports() != null && !employee.getDirectReports().isEmpty()) {
+            for (int i = 0; i < employee.getDirectReports().size(); i++) {
+                String directReportId = employee.getDirectReports().get(i).getEmployeeId();
+                Employee directReport = employeeRepository.findByEmployeeId(directReportId);
+                loadDirectReportsData(directReport, seen);
+                employee.getDirectReports().set(i, directReport);
+            }
+        }
     }
 
     /*
