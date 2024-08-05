@@ -29,7 +29,11 @@ public class EmployeeServiceImpl implements EmployeeService {
 
         return employee;
     }
-
+    /*
+        I noticed this base read method that was already a part of this file was basically having the same issue as I
+        was having before, where it does not recursively go deep to load the indirect report's data. I will just add the
+        recursion call here to make things consistent and have the full data.
+     */
     @Override
     public Employee read(String id) {
         LOG.debug("Creating employee with id [{}]", id);
@@ -38,6 +42,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 
         if (employee == null) {
             throw new RuntimeException("Invalid employeeId: " + id);
+        } else {
+            loadDirectReportsData(employee, new HashSet<>());
         }
 
         return employee;
