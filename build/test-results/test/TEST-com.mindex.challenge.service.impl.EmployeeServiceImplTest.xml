@@ -1,9 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.mindex.challenge.service.impl.EmployeeServiceImplTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-08-04T23:49:44" hostname="Andys-Laptop" time="0.07">
+<testsuite name="com.mindex.challenge.service.impl.EmployeeServiceImplTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2024-08-06T04:27:44" hostname="Andys-Laptop" time="0.488">
   <properties/>
-  <testcase name="testCreateReadUpdate" classname="com.mindex.challenge.service.impl.EmployeeServiceImplTest" time="0.07"/>
-  <system-out><![CDATA[2024-08-04T19:49:43.869-04:00  INFO 39877 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.mindex.challenge.service.impl.EmployeeServiceImplTest]: EmployeeServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-08-04T19:49:43.873-04:00  INFO 39877 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.mindex.challenge.ChallengeApplication for test class com.mindex.challenge.service.impl.EmployeeServiceImplTest
+  <testcase name="testReportingStructure" classname="com.mindex.challenge.service.impl.EmployeeServiceImplTest" time="0.488">
+    <failure message="java.lang.AssertionError: expected:&lt;2&gt; but was:&lt;0&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;2&gt; but was:&lt;0&gt;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at com.mindex.challenge.service.impl.EmployeeServiceImplTest.testReportingStructure(EmployeeServiceImplTest.java:181)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:76)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:112)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:40)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:60)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <system-out><![CDATA[00:27:43.283 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.mindex.challenge.service.impl.EmployeeServiceImplTest]: EmployeeServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+00:27:43.332 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.mindex.challenge.ChallengeApplication for test class com.mindex.challenge.service.impl.EmployeeServiceImplTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -13,36 +71,127 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.3)
 
-2024-08-04T19:49:43.882-04:00  INFO 39877 --- [    Test worker] c.m.c.s.impl.EmployeeServiceImplTest     : Starting EmployeeServiceImplTest using Java 17.0.12 with PID 39877 (started by andy in /Users/andy/Desktop/Mindex Challenge/mindex-code-challenge)
-2024-08-04T19:49:43.882-04:00 DEBUG 39877 --- [    Test worker] c.m.c.s.impl.EmployeeServiceImplTest     : Running with Spring Boot v3.2.3, Spring v6.1.4
-2024-08-04T19:49:43.882-04:00  INFO 39877 --- [    Test worker] c.m.c.s.impl.EmployeeServiceImplTest     : No active profile set, falling back to 1 default profile: "default"
-2024-08-04T19:49:43.916-04:00  INFO 39877 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
-2024-08-04T19:49:43.918-04:00  INFO 39877 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 1 MongoDB repository interface.
-2024-08-04T19:49:43.976-04:00  INFO 39877 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
-2024-08-04T19:49:43.980-04:00  INFO 39877 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-04T19:49:43.980-04:00  INFO 39877 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
-2024-08-04T19:49:43.998-04:00  INFO 39877 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-04T19:49:43.999-04:00  INFO 39877 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 115 ms
-2024-08-04T19:49:44.016-04:00  INFO 39877 --- [    Test worker] de.bwaldvogel.mongo.MongoServer          : started MongoServer(port: 57149, ssl: false)
-2024-08-04T19:49:44.018-04:00  INFO 39877 --- [    Test worker] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync", "version": "4.11.1"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "aarch64", "version": "14.0"}, "platform": "Java/Homebrew/17.0.12+0"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@4b515eab, com.mongodb.Jep395RecordCodecProvider@66c9b52f, com.mongodb.KotlinCodecProvider@1536ea40]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:57149], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
-2024-08-04T19:49:44.019-04:00  INFO 39877 --- [-server-worker2] d.b.mongo.wire.MongoWireProtocolHandler  : client [id: 0x59a6728c, L:/127.0.0.1:57149 - R:/127.0.0.1:57151] connected
-2024-08-04T19:49:44.019-04:00  INFO 39877 --- [-server-worker1] d.b.mongo.wire.MongoWireProtocolHandler  : client [id: 0x8cd5c943, L:/127.0.0.1:57149 - R:/127.0.0.1:57150] connected
-2024-08-04T19:49:44.021-04:00  INFO 39877 --- [localhost:57149] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:57149, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=2631250}
-2024-08-04T19:49:44.041-04:00  INFO 39877 --- [-server-worker3] d.b.mongo.wire.MongoWireProtocolHandler  : client [id: 0x784628ca, L:/127.0.0.1:57149 - R:/127.0.0.1:57152] connected
-2024-08-04T19:49:44.043-04:00  INFO 39877 --- [-server-worker3] d.b.mongo.backend.AbstractMongoBackend   : created database test
-2024-08-04T19:49:44.043-04:00  INFO 39877 --- [-server-worker3] d.b.mongo.backend.AbstractMongoDatabase  : adding unique _id index for collection employee
-2024-08-04T19:49:44.043-04:00  INFO 39877 --- [-server-worker3] d.b.mongo.backend.AbstractMongoDatabase  : created collection test.employee
-2024-08-04T19:49:44.080-04:00  INFO 39877 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 57153 (http) with context path ''
-2024-08-04T19:49:44.082-04:00  INFO 39877 --- [    Test worker] c.m.c.s.impl.EmployeeServiceImplTest     : Started EmployeeServiceImplTest in 0.207 seconds (process running for 1.689)
-2024-08-04T19:49:44.126-04:00  INFO 39877 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-08-04T19:49:44.126-04:00  INFO 39877 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-08-04T19:49:44.127-04:00  INFO 39877 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2024-08-04T19:49:44.139-04:00 DEBUG 39877 --- [o-auto-1-exec-1] c.m.c.controller.EmployeeController      : Received employee create request for [com.mindex.challenge.data.Employee@490408d8]
-2024-08-04T19:49:44.139-04:00 DEBUG 39877 --- [o-auto-1-exec-1] c.m.c.service.impl.EmployeeServiceImpl   : Creating employee [com.mindex.challenge.data.Employee@490408d8]
-2024-08-04T19:49:44.147-04:00 DEBUG 39877 --- [o-auto-1-exec-2] c.m.c.controller.EmployeeController      : Received employee create request for id [3f711d43-a7d4-4b12-b00d-9bb9797413e2]
-2024-08-04T19:49:44.147-04:00 DEBUG 39877 --- [o-auto-1-exec-2] c.m.c.service.impl.EmployeeServiceImpl   : Creating employee with id [3f711d43-a7d4-4b12-b00d-9bb9797413e2]
-2024-08-04T19:49:44.150-04:00 DEBUG 39877 --- [o-auto-1-exec-3] c.m.c.controller.EmployeeController      : Received employee create request for id [3f711d43-a7d4-4b12-b00d-9bb9797413e2] and employee [com.mindex.challenge.data.Employee@3f7f47ea]
-2024-08-04T19:49:44.150-04:00 DEBUG 39877 --- [o-auto-1-exec-3] c.m.c.service.impl.EmployeeServiceImpl   : Updating employee [com.mindex.challenge.data.Employee@3f7f47ea]
+2024-08-06T00:27:43.486-04:00  INFO 44378 --- [    Test worker] c.m.c.s.impl.EmployeeServiceImplTest     : Starting EmployeeServiceImplTest using Java 17.0.12 with PID 44378 (started by andy in /Users/andy/Desktop/Mindex Challenge/mindex-code-challenge)
+2024-08-06T00:27:43.486-04:00 DEBUG 44378 --- [    Test worker] c.m.c.s.impl.EmployeeServiceImplTest     : Running with Spring Boot v3.2.3, Spring v6.1.4
+2024-08-06T00:27:43.486-04:00  INFO 44378 --- [    Test worker] c.m.c.s.impl.EmployeeServiceImplTest     : No active profile set, falling back to 1 default profile: "default"
+2024-08-06T00:27:43.640-04:00  INFO 44378 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-08-06T00:27:43.654-04:00  INFO 44378 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 MongoDB repository interface.
+2024-08-06T00:27:43.884-04:00  INFO 44378 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-08-06T00:27:43.889-04:00  INFO 44378 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-06T00:27:43.889-04:00  INFO 44378 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-08-06T00:27:43.917-04:00  INFO 44378 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-06T00:27:43.918-04:00  INFO 44378 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 424 ms
+2024-08-06T00:27:44.010-04:00  INFO 44378 --- [    Test worker] de.bwaldvogel.mongo.MongoServer          : started MongoServer(port: 59440, ssl: false)
+2024-08-06T00:27:44.050-04:00  INFO 44378 --- [    Test worker] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync", "version": "4.11.1"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "aarch64", "version": "14.0"}, "platform": "Java/Homebrew/17.0.12+0"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@41aebbb4, com.mongodb.Jep395RecordCodecProvider@afde064, com.mongodb.KotlinCodecProvider@5a592c70]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:59440], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-08-06T00:27:44.064-04:00  INFO 44378 --- [-server-worker1] d.b.mongo.wire.MongoWireProtocolHandler  : client [id: 0x2b18cffe, L:/127.0.0.1:59440 - R:/127.0.0.1:59442] connected
+2024-08-06T00:27:44.064-04:00  INFO 44378 --- [-server-worker2] d.b.mongo.wire.MongoWireProtocolHandler  : client [id: 0x818e03fc, L:/127.0.0.1:59440 - R:/127.0.0.1:59441] connected
+2024-08-06T00:27:44.090-04:00  INFO 44378 --- [localhost:59440] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:59440, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=37386583}
+2024-08-06T00:27:44.235-04:00  INFO 44378 --- [-server-worker3] d.b.mongo.wire.MongoWireProtocolHandler  : client [id: 0xc7edcf9b, L:/127.0.0.1:59440 - R:/127.0.0.1:59443] connected
+2024-08-06T00:27:44.246-04:00  INFO 44378 --- [-server-worker3] d.b.mongo.backend.AbstractMongoBackend   : created database test
+2024-08-06T00:27:44.248-04:00  INFO 44378 --- [-server-worker3] d.b.mongo.backend.AbstractMongoDatabase  : adding unique _id index for collection employee
+2024-08-06T00:27:44.250-04:00  INFO 44378 --- [-server-worker3] d.b.mongo.backend.AbstractMongoDatabase  : created collection test.employee
+2024-08-06T00:27:44.368-04:00  INFO 44378 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 59444 (http) with context path ''
+2024-08-06T00:27:44.373-04:00  INFO 44378 --- [    Test worker] c.m.c.s.impl.EmployeeServiceImplTest     : Started EmployeeServiceImplTest in 0.989 seconds (process running for 1.403)
+2024-08-06T00:27:44.788-04:00  INFO 44378 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-06T00:27:44.788-04:00  INFO 44378 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-06T00:27:44.788-04:00  INFO 44378 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-08-06T00:27:44.802-04:00 DEBUG 44378 --- [o-auto-1-exec-1] c.m.c.controller.EmployeeController      : Received employee create request for [com.mindex.challenge.data.Employee@331f9b99]
+2024-08-06T00:27:44.802-04:00 DEBUG 44378 --- [o-auto-1-exec-1] c.m.c.service.impl.EmployeeServiceImpl   : Creating employee [com.mindex.challenge.data.Employee@331f9b99]
+2024-08-06T00:27:44.812-04:00 DEBUG 44378 --- [o-auto-1-exec-2] c.m.c.controller.EmployeeController      : Received employee create request for [com.mindex.challenge.data.Employee@3be6c6b5]
+2024-08-06T00:27:44.812-04:00 DEBUG 44378 --- [o-auto-1-exec-2] c.m.c.service.impl.EmployeeServiceImpl   : Creating employee [com.mindex.challenge.data.Employee@3be6c6b5]
+2024-08-06T00:27:44.815-04:00 DEBUG 44378 --- [o-auto-1-exec-3] c.m.c.controller.EmployeeController      : Received employee create request for [com.mindex.challenge.data.Employee@565ea36f]
+2024-08-06T00:27:44.815-04:00 DEBUG 44378 --- [o-auto-1-exec-3] c.m.c.service.impl.EmployeeServiceImpl   : Creating employee [com.mindex.challenge.data.Employee@565ea36f]
+EmployeeA ID: f3a14c28-3735-4ba3-844f-3c81a2c3b852
+EmployeeB ID: a8049ab2-fd04-4b0d-a6d3-bbce684bd6f4
+EmployeeC ID: ece70f42-aace-4d74-a7f7-daa593b0a477
+2024-08-06T00:27:44.820-04:00 DEBUG 44378 --- [o-auto-1-exec-4] c.m.c.controller.EmployeeController      : Received employee create request for id [f3a14c28-3735-4ba3-844f-3c81a2c3b852] and employee [com.mindex.challenge.data.Employee@40ca2423]
+2024-08-06T00:27:44.821-04:00 DEBUG 44378 --- [o-auto-1-exec-4] c.m.c.service.impl.EmployeeServiceImpl   : Updating employee [com.mindex.challenge.data.Employee@40ca2423]
+2024-08-06T00:27:44.824-04:00 DEBUG 44378 --- [o-auto-1-exec-5] c.m.c.controller.EmployeeController      : Received employee create request for id [ece70f42-aace-4d74-a7f7-daa593b0a477] and employee [com.mindex.challenge.data.Employee@583e8267]
+2024-08-06T00:27:44.824-04:00 DEBUG 44378 --- [o-auto-1-exec-5] c.m.c.service.impl.EmployeeServiceImpl   : Updating employee [com.mindex.challenge.data.Employee@583e8267]
+2024-08-06T00:27:44.848-04:00 ERROR 44378 --- [o-auto-1-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "employeeId" : "f3a14c28-3735-4ba3-844f-3c81a2c3b852"}, Fields: {}, Sort: {} } returned non unique result] with root cause
+
+org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "employeeId" : "f3a14c28-3735-4ba3-844f-3c81a2c3b852"}, Fields: {}, Sort: {} } returned non unique result
+	at org.springframework.data.mongodb.core.ExecutableFindOperationSupport$ExecutableFindSupport.oneValue(ExecutableFindOperationSupport.java:119) ~[spring-data-mongodb-4.2.3.jar:4.2.3]
+	at org.springframework.data.mongodb.repository.query.AbstractMongoQuery.lambda$getExecution$7(AbstractMongoQuery.java:202) ~[spring-data-mongodb-4.2.3.jar:4.2.3]
+	at org.springframework.data.mongodb.repository.query.AbstractMongoQuery.doExecute(AbstractMongoQuery.java:147) ~[spring-data-mongodb-4.2.3.jar:4.2.3]
+	at org.springframework.data.mongodb.repository.query.AbstractMongoQuery.execute(AbstractMongoQuery.java:119) ~[spring-data-mongodb-4.2.3.jar:4.2.3]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170) ~[spring-data-commons-3.2.3.jar:3.2.3]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158) ~[spring-data-commons-3.2.3.jar:3.2.3]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:164) ~[spring-data-commons-3.2.3.jar:3.2.3]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143) ~[spring-data-commons-3.2.3.jar:3.2.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.4.jar:6.1.4]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70) ~[spring-data-commons-3.2.3.jar:3.2.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.4.jar:6.1.4]
+	at org.springframework.data.mongodb.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:129) ~[spring-data-mongodb-4.2.3.jar:4.2.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.4.jar:6.1.4]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.4.jar:6.1.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.4.jar:6.1.4]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:220) ~[spring-aop-6.1.4.jar:6.1.4]
+	at jdk.proxy3/jdk.proxy3.$Proxy82.findByEmployeeId(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351) ~[spring-aop-6.1.4.jar:6.1.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.4.jar:6.1.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.4.jar:6.1.4]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.1.4.jar:6.1.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.4.jar:6.1.4]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:220) ~[spring-aop-6.1.4.jar:6.1.4]
+	at jdk.proxy3/jdk.proxy3.$Proxy82.findByEmployeeId(Unknown Source) ~[na:na]
+	at com.mindex.challenge.service.impl.EmployeeServiceImpl.getReportingStructure(EmployeeServiceImpl.java:70) ~[main/:na]
+	at com.mindex.challenge.controller.EmployeeController.getReportingStructure(EmployeeController.java:46) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:259) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:192) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:920) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
