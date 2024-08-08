@@ -12,7 +12,7 @@ import org.springframework.lang.NonNull;
 
 import java.net.InetSocketAddress;
 
-@EnableMongoRepositories(basePackageClasses = EmployeeRepository.class)
+@EnableMongoRepositories(basePackages = "com.mindex.challenge.dao")
 @Configuration
 public class MongoConfig extends AbstractMongoClientConfiguration {
 
