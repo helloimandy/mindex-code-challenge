@@ -112,6 +112,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         int count = 0;
         if (employee.getDirectReports() != null) {
             for (Employee directReport : employee.getDirectReports()) {
+                // putting logs to see outputs on null report for testing class (since it is failing)
                 if (directReport == null) {
                     System.out.println("Null direct report found for employee: " + employee.getEmployeeId());
                     continue;
