@@ -86,7 +86,11 @@ public class EmployeeServiceImpl implements EmployeeService {
         if (employee.getDirectReports() != null && !employee.getDirectReports().isEmpty()) {
             for (int i = 0; i < employee.getDirectReports().size(); i++) {
                 String directReportId = employee.getDirectReports().get(i).getEmployeeId();
+                System.out.println("Loading direct report: " + directReportId);
+
                 Employee directReport = employeeRepository.findByEmployeeId(directReportId);
+                System.out.println("Full report loaded: " + (directReport != null ? directReport.getEmployeeId() : "null"));
+
                 loadDirectReportsData(directReport, seen);
                 employee.getDirectReports().set(i, directReport);
             }
@@ -108,7 +112,17 @@ public class EmployeeServiceImpl implements EmployeeService {
         int count = 0;
         if (employee.getDirectReports() != null) {
             for (Employee directReport : employee.getDirectReports()) {
+                // putting logs to see outputs on null report for testing class (since it is failing)
+                if (directReport == null) {
+                    System.out.println("Null direct report found for employee: " + employee.getEmployeeId());
+                    continue;
+                }
                 Employee indirectReports = employeeRepository.findByEmployeeId(directReport.getEmployeeId());
+                if (indirectReports == null) {
+                    System.out.println("No employee found for ID: " + directReport.getEmployeeId());
+                    continue;
+                }
+
                 count += calculateDirectReports(indirectReports, seen) + 1;
             }
         }
