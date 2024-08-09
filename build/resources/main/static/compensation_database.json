@@ -1,0 +1,45 @@
+[
+  {
+    "employee": {
+      "employeeId": "16a596ae-edd3-4847-99fe-c4518e82c86f",
+      "firstName": "John",
+      "lastName": "Lennon",
+      "position": "Development Manager",
+      "department": "Engineering",
+      "directReports": [
+        {
+          "employeeId": "b7839309-3348-463b-a7e3-5de1c168beb3"
+        },
+        {
+          "employeeId": "03aa1462-ffa9-4978-901b-7c001562cf6f"
+        }
+      ]
+    },
+    "salary": 120000,
+    "effectiveDate": "2024-01-01"
+  },
+  {
+    "employee": {
+      "employeeId": "b7839309-3348-463b-a7e3-5de1c168beb3",
+      "firstName": "Paul",
+      "lastName": "McCartney",
+      "position": "Developer",
+      "department": "Engineering",
+      "directReports": []
+    },
+    "salary": 95000,
+    "effectiveDate": "2024-02-01"
+  },
+  {
+    "employee": {
+      "employeeId": "03aa1462-ffa9-4978-901b-7c001562cf6f",
+      "firstName": "George",
+      "lastName": "Harrison",
+      "position": "QA Engineer",
+      "department": "Quality Assurance",
+      "directReports": []
+    },
+    "salary": 90000,
+    "effectiveDate": "2024-03-01"
+  }
+]
